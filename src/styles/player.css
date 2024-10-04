@@ -1,0 +1,104 @@
+body {
+    background-color: #121212; /* Fondo global oscuro */
+    font-family: 'Arial', sans-serif; /* Fuente más limpia */
+    color: #ffffff; /* Texto blanco para mejor legibilidad */
+    margin: 0;
+    padding: 0;
+}
+
+.player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a1a; /* Fondo del reproductor */
+    color: #eee; /* Color de texto claro */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 400px; /* Ancho fijo para el reproductor */
+    margin: auto; /* Centrar en la página */
+}
+
+.song-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.album-cover {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #f12e2e;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    flex: 1; /* Hacer que los botones ocupen espacio igual */
+    margin: 0 10px; /* Espaciado uniforme entre botones */
+}
+
+button:hover {
+    background-color: #e76e6e;
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.progress-container input[type="range"] {
+    flex: 1; /* Permitir que el slider ocupe más espacio */
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.volume-control {
+    margin: 20px 0;
+}
+
+.song-list {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.song-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.song-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.song-list li:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Efecto hover en la lista de canciones */
+}
+
+.song-list img {
+    width: 50px; /* Tamaño de la imagen de la canción */
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px; /* Espacio entre imagen y texto */
+}
